@@ -1,14 +1,13 @@
-<!-- Incluye Bootstrap 5 CSS y JS desde CDN si aún no lo tienes -->
+<!-- Bootstrap 5 CSS y JS desde CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <div id="carouselExample" class="carousel slide carrusel-custom" data-bs-ride="carousel" data-bs-interval="7000">
   <div class="carousel-inner">
-    <!-- Slide 1: Perry Mason -->
+    <!-- Slide 1 -->
     <div class="carousel-item active position-relative">
-      <a href="/ruta/destino-1" style="display: block; width: 100%; height: 100%;">
-        <img src="/image/fondos/perry_mason_fondo.jpg" class="d-block w-100" alt="...">
-        <!-- Contenedor combinado para imagen y texto -->
+      <a href="/ruta/destino-1" class="d-block w-100 h-100">
+        <img src="/image/fondos/perry_mason_fondo.jpg" class="d-block w-100" alt="Perry Mason fondo">
         <div class="contenedor-superpuesto">
           <img src="/image/logo/Perry Mason.jpg" class="superpuesta" alt="Logo Perry Mason">
           <div class="texto-superpuesto">
@@ -18,10 +17,10 @@
         </div>
       </a>
     </div>
-    <!-- Slide 2: Red Heat -->
+    <!-- Slide 2 -->
     <div class="carousel-item position-relative">
-      <a href="/ruta/destino-2" style="display: block; width: 100%; height: 100%;">
-        <img src="/image/fondos/Red_Heat_Fondo.jpg" class="d-block w-100" alt="...">
+      <a href="/peliculas/Red_Heat.html" class="d-block w-100 h-100">
+        <img src="/image/fondos/Red_Heat_Fondo.jpg" class="d-block w-100" alt="Red Heat fondo">
         <div class="contenedor-superpuesto">
           <img src="/image/logo/Red_Heat.jpg" class="superpuesta" alt="Logo Red Heat">
           <div class="texto-superpuesto">
@@ -31,22 +30,20 @@
         </div>
       </a>
     </div>
-    <!-- Slide 3: Lion Heart -->
+    <!-- Slide 3 -->
     <div class="carousel-item position-relative">
-      <a href="/ruta/destino-2" style="display: block; width: 100%; height: 100%;">
-        <img src="/image/fondos/LionHeart_Fondo.jpg" class="d-block w-100" alt="...">
+      <a href="/ruta/destino-3" class="d-block w-100 h-100">
+        <img src="/image/fondos/LionHeart_Fondo.jpg" class="d-block w-100" alt="Lion Heart fondo">
         <div class="contenedor-superpuesto">
-          <img src="/image/logo/lionheart.jpg" class="superpuesta" alt="Logo Red Heat">
+          <img src="/image/logo/lionheart.jpg" class="superpuesta" alt="Logo Lion Heart">
           <div class="texto-superpuesto">
-            <h5>Lion Heat</h5>
+            <h5>Lion Heart</h5>
             <p>Acción y comedia con Arnold Schwarzenegger.</p>
           </div>
         </div>
       </a>
     </div>
-    <!-- ...agrega más slides aquí, cambiando el href a la página de destino de cada una -->
   </div>
-  <!-- Controles opcionales -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
     <span class="visually-hidden">Anterior</span>
@@ -56,6 +53,7 @@
     <span class="visually-hidden">Siguiente</span>
   </button>
 </div>
+
 
 <style>
 .carrusel-custom {
@@ -71,7 +69,6 @@
   height: 350px;
   object-fit: cover;
 }
-/* Contenedor para alinear imagen y texto */
 .contenedor-superpuesto {
   position: absolute;
   bottom: 20px;
@@ -80,21 +77,18 @@
   display: flex;
   align-items: center;
   z-index: 3;
-  /* Opcional: fondo para todo el bloque */
   background: rgba(0,0,0,0.55);
   border-radius: 8px;
   padding: 12px 20px;
 }
-/* Imagen más baja y más pequeña */
 .superpuesta {
   width: 80px;
   height: 80px;
   object-fit: contain;
   margin-right: 18px;
   border-radius: 8px;
-  background: #fff2; /* Opcional: leve fondo para destacar */
+  background: #fff2;
 }
-/* Texto ajustable */
 .texto-superpuesto {
   color: #fff;
   margin: 0;
@@ -107,7 +101,6 @@
   margin: 0;
   font-size: 1em;
 }
-/* Hace que el cursor se vea como un enlace en todo el slide */
 .carousel-item > a {
   cursor: pointer;
 }
