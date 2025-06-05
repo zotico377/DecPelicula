@@ -1,0 +1,81 @@
+ <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .contenido {
+      flex: 1;
+    }
+    footer {
+      background: linear-gradient(90deg, #343a40 0%, #23272b 100%);
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px 20px 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+    }
+    .footer-links {
+      margin: 10px 0;
+    }
+    .footer-links a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: #ff9800;
+      text-decoration: underline;
+    }
+    .footer-social {
+      margin: 14px 0;
+    }
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      color: #fff;
+      font-size: 1.5em;
+      transition: color 0.2s;
+    }
+    .footer-social a:hover {
+      color: #ffd700;
+    }
+    @media (max-width: 600px) {
+      footer {
+        font-size: 0.95em;
+        padding: 20px 5px 15px 5px;
+      }
+      .footer-social a {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+  <!-- Puedes usar iconos de FontAwesome para redes sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="contenido">
+    <!-- Aquí va el contenido principal de tu página -->
+  </div>
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:tuemail@ejemplo.com"><i class="fa fa-envelope"></i> Contacto</a>
+      <a href="#">Aviso Legal</a>
+      <a href="#">Política de Privacidad</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>&copy; 2025 Tu Nombre o Empresa. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
