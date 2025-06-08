@@ -16,7 +16,6 @@
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Espera un poco para asegurarse de que hinclude terminó de incluir el carrusel
         setTimeout(function () {
           var el = document.getElementById("carouselExample");
           if (el && typeof bootstrap !== "undefined" && bootstrap.Carousel) {
@@ -25,8 +24,9 @@
               ride: "carousel",
             });
           }
-        }, 400); // Puedes ajustar el tiempo si lo necesitas
+        }, 400); 
       });
+        
     </script>
 
     <hx:include src="/components/cards.html"></hx:include>
